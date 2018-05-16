@@ -19,6 +19,7 @@ public class Rentals {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull
+    @Column(name = "ID", unique = true)
     private Long id;
 
     @Column(name = "rent_date")

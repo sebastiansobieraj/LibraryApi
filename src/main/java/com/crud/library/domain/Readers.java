@@ -21,6 +21,7 @@ public class Readers {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull
+    @Column(name = "ID", unique = true)
     private Long id;
 
     @Column(name = "name")

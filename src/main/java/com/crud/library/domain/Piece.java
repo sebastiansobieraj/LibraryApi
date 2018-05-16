@@ -18,6 +18,7 @@ public class Piece {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull
+    @Column(name = "ID", unique = true)
     private Long id;
 
     @Column(name = "book_status")

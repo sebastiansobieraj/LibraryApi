@@ -20,6 +20,7 @@ public class Title {
     @Id
     @NotNull
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "ID", unique = true)
     private Long id;
 
     @Column(name = "title")
